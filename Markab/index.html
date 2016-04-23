@@ -21,13 +21,7 @@
 	<div class="banner">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-2">
-					Time on Mars 
-					<div id="earth_date">
-						
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-8 text-center">
+				<div class="col-xs-12 text-center">
 					<h1 class="alpha">Mar<span class="red">kab</span></h1>
 					<h2 class="beta">MARs Communication Aid Box</h2>				
 				</div>
@@ -38,114 +32,54 @@
 
 	<div class="panels">
 		<div class="container">
-
 			<div class="row">
-			
-				<div class="col-xs-12">
+				
+				
+
+				<div class="col-xs-12 " id="default">
+					<div class="panel">
+						<h3 class="gamma">Default</h3>
+					</div>
+				</div>
+
+				<div class="col-xs-12 js-panel" id="selfie">
+					<div class="panel">
+						<h3 class="gamma">Selfie</h3>
+						<img src="assets/img/selfie.jpg">
+					</div>
+				</div>
+
+				<div class="col-xs-12  js-panel" id="message">
+					<div class="panel">
+						<h3 class="gamma">Messages:</h3>
+						<p>Hi Mom!</p>
+						sending...
+					</div>
+				</div>
+				
+				<div class="col-xs-12  js-panel" id="time">
+					<div class="panel">
+						<h3 class="gamma">Time</h3>
+						<div id="local-time"></div>
+						<div id="mars-time"></div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12  js-panel" id="conditions">
 					<div class="panel">
 						<h3 class="gamma">Conditions on Mars</h3>
-<!-- https://api.nasa.gov/planetary/apod?api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI -->
-	    <!-- url: "http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=hellomars", -->
 	    				<img src="" id="map" class="mars-img">
 					</div>
 				</div>
 
-				<div class="col-xs-12">
-					
-							
-				</div>
-				
+
 
 			</div>
-
 		</div>
 	</div>
 
-<script type="text/javascript">
-	
-	$.ajax({
-	    url: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=398&api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI",
-	 
-	    // The name of the callback parameter, as specified by the YQL service
-	    // jsonp: "callback",
-	 
-	    // Tell jQuery we're expecting JSONP
-	    dataType: "json",
-	 
-	    // Tell YQL what we want and that we want JSON
-	    // data: {
-	    //     q: "select title,abstract,url from search.news where query=\"cat\"",
-	    //     format: "json"
-	    // },
-	 
-	    // Work with the response
-	    success: function( data ) {
-	       	 	console.log(data);
-	        photo = data.photos[2];
-	    		console.log("photo " + photo.img_src);
-	    	img = photo.img_src;
-	    	earth_date = photo.earth_date;
-	    		console.log(earth_date);
-	    	
-	    	//update page
-	    	$("#map").attr("src",img);
-	    	$( "#earth_date" ).text(earth_date);
-	    }
 
-	});
-
-
-	// $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function(response){
-	// 		var mars = JSON.parse(response);
-	// 		console.log(mars);
-
-	// 		if (mars = printedMars){
-	// 			//the data is the same, so do nothing
-	// 		} else {
-
-
-	// 			printedMars = mars;
-	// 		}
-
-	// 	});
-	
-	$.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function(mars){
-		console.log(mars);
-	});
-
-
-	// setInterval(function(){ 
-			$.ajax({
-			    url: 'http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status',
-			    dataType: 'JSON',
-			    // jsonpCallback: 'callback',
-			    type: 'GET',
-			    success: function (mars) {
-			       console.log(mars);
-			       console.log(mars.errors);
-
-		
-
-			    }
-			});
-
-
-	// }, 9000);
-	
-
-
-
-
-//https://api.flightstats.com/flex/schedules/rest/v1/jsonp/flight/AA/100/departing/2013/10/4?appId=19d57e69&appKey=e0ea60854c1205af43fd7b1203005d59
-
-
-	// $.getJSON( "http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=hellomars", function( data ) {
-	 
-	 
-	//   $(data).appendTo( "body" );
-	// });
-
-</script>
+	<script src="assets/js/update.js"></script>
 
 
 </body>
