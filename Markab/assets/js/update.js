@@ -3,8 +3,8 @@ var currentdate = new Date();
 var datetime = currentdategetHours() + ":" + currentdategetMinutes() + ":" + currentdategetSeconds();
 var marsdatetime = (currentdategetHours() + 5) + ":" + currentdategetMinutes() + ":" + currentdategetSeconds();
 
-$("#local-time").text("Local Time: " + datetime);
-$("#mars-time").text("Mars Time: " + marsdatetime);
+$("#local-time").text("Local Time: " + new Date());
+$("#mars-time").text("Mars Time: 01:33, Sol 28 ");
 
 
 //print mars image from NASA
@@ -30,7 +30,8 @@ var reset = function () {
 };
 
 // hide all panels by default
-$("js-panel").hide();
+$(".js-panel").hide();
+$("#default").show();
 
 var update = function () {
     consolelog("updating ui");
