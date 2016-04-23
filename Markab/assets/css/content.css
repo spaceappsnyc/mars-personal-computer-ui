@@ -87,29 +87,6 @@ ul {
 
 
 
-/*------------------------
-          BUTTON
--------------------------*/
-
-.button {
-    border-radius: 2px;
-    border: 1px solid #2badd9;
-    background: #2badd9;
-    color: #fff;
-    padding: 5px 15px;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    height::;6px;
-    transition: all 0.15s ease;
-}
-
-.button:hover{
-  color:#2badd9 !important;
-  border: 1px solid #2badd9;
-  background-color: #fff;
-
-}
 
 /*------------------------
         SPACING
@@ -181,6 +158,9 @@ ul {
     color: #e51b24;
   }
 
+  .mars-img{
+    max-width: 100%;
+  }
 /*-------------------
    CONTENT: PANELS
 --------------------*/
