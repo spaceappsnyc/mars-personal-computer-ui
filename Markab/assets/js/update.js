@@ -31,8 +31,8 @@ var reset = function () {
 
 // hide all panels by default
 $(".js-panel").hide();
-
-
+$("#default").hide();
+$("#hellomars").show();
 var update = function () {
     console.log("updating ui...");
     $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function (response) {
@@ -88,7 +88,7 @@ var update = function () {
         });
 };
 
-update();
+// update();
 
 
 
