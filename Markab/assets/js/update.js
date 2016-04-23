@@ -1,19 +1,14 @@
-// print local and mars time
-var currentdate = new Date();
-var datetime = currentdategetHours() + ":" + currentdategetMinutes() + ":" + currentdategetSeconds();
-var marsdatetime = (currentdategetHours() + 5) + ":" + currentdategetMinutes() + ":" + currentdategetSeconds();
-
 $("#local-time").text("Local Time: " + new Date());
 $("#mars-time").text("Mars Time: 01:33, Sol 28 ");
 
 
 //print mars image from NASA
-$ajax({
-    url: "https://apinasagov/mars-photos/api/v1/rovers/curiosity/photos?sol=398&api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI",
+$.ajax({
+    url: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=398&api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI",
     dataType: "json",
     success: function (data) {
-        photo = dataphotos[2];
-        img = photoimg_src;
+        photo = data.photos[2];
+        img = photo.img_src;
         $("#map").attr("src", img);
     }
 });
@@ -24,7 +19,7 @@ $ajax({
 // });
 
 var reset = function () {
-    $("js-panel").hide();
+    $(".js-panel").hide();
     $("#default").show();
     update();
 };
@@ -34,10 +29,10 @@ $(".js-panel").hide();
 $("#default").show();
 
 var update = function () {
-    consolelog("updating ui");
-    $get('http://spaceappshackathoneu-gbmybluemixnet/indexphp?q=status', function (response) {
-        if (responsedata) {
-            var status = responsedatacommand;
+    console.log("updating ui");
+    $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function (response) {
+        if (response.data) {
+            var status = response.data.command;
 
             /**
              *
@@ -58,7 +53,7 @@ var update = function () {
 
             // show containers based on status
 
-            consolelog("status: " + status);
+            console.log("status: " + status);
 
             if (status == "selfie") {
                 $("#default").hide();
