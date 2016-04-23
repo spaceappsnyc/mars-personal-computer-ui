@@ -5,9 +5,9 @@
 -------------------------*/
 
 html {
-  font-size: 14px;
-  height: 100%;
-  background-color: #000;
+    font-size: 14px;
+    height: 100%;
+    background-color: #000;
 }
 
 body {
@@ -18,70 +18,71 @@ body {
     background-image: url("../img/background.gif");
 }
 
-
 /*------------------------
        TYPOGRAPHY
 -------------------------*/
 
-.alpha{
+.alpha {
     margin: 22px 0 8px;
     font-size: 40px;
     line-height: 1.16667;
 }
 
-.beta{
+.beta {
     color: #2badd9;
     font-size: 14px;
     line-height: 1.3;
 }
 
-.gamma{
+.gamma {
     color: #fff;
     font-size: 16px;
     text-align: center;
 }
 
-p{
+p {
     margin: 14px 0;
     font-size: 14px;
     line-height: 1.5;
 }
 
-
-
-
 /*---------------------
     CONTENT: HEADER
 ---------------------*/
 
-
-  .red{
+.red {
     color: #e51b24;
-  }
+}
 
-  .mars-img{
+.mars-img {
     max-width: 100%;
-  }
-  
+}
+
 /*-------------------
    CONTENT: PANELS
 --------------------*/
 
-  .panels{
+.panels {
     /*height: 200px;*/
-  }
+}
 
-  .panel{
+.panel {
     border: 1px solid #2badd9;
     text-align: center;
     padding: 10px;
     margin-bottom: 200px;
-  }
+}
 
-  .panels .row .col-xs-12{
+.panels .row .col-xs-12 {
     margin-top: 20px;
-  }
+}
 
-  img{
+img {
     max-width: 100%;
-  }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
