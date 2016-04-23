@@ -36,53 +36,56 @@ $(".js-panel").hide();
 var update = function () {
     console.log("updating ui...");
     $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function (response) {
-        if (response.data) {
-            var status = response.data.command;
-            console.log("status: " + status);
+            if (response.data) {
+                var status = response.data.command;
+                console.log("status: " + status);
 
-            // show containers based on status
-            if (status == "selfie") {
-                $("#default").hide();
-                $("#selfie").show();
-                setTimeout(reset, 5000);
-            }
+                // show containers based on status
+                if (status == "selfie") {
+                    $("#default").hide();
+                    $("#selfie").show();
+                    setTimeout(reset, 5000);
+                }
 
-            else if (status == "time") {
-                $("#default").hide();
-                $("#time").show();
-                setTimeout(reset, 5000);
-            }
+                else if (status == "time") {
+                    $("#default").hide();
+                    $("#time").show();
+                    setTimeout(reset, 5000);
+                }
 
-            else if (status == "hellomars") {
-                $("#default").hide();
-                $("#hellomars").show();
-                setTimeout(reset, 5000);
-            }
+                else if (status == "hellomars") {
+                    $("#default").hide();
+                    $("#hellomars").show();
+                    setTimeout(reset, 5000);
+                }
 
-            else if (status == "message") {
-                $("#default").hide();
-                $("#message").show();
-                setTimeout(reset, 5000);
-            }
+                else if (status == "message") {
+                    $("#default").hide();
+                    $("#message").show();
+                    setTimeout(reset, 5000);
+                }
 
-            else if (status == "map") {
-                $("#default").hide();
-                $("#map").show();
-                setTimeout(reset, 5000);
-            }
+                else if (status == "map") {
+                    $("#default").hide();
+                    $("#map").show();
+                    setTimeout(reset, 5000);
+                }
 
-            else if (status == "conditions") {
-                $("#default").hide();
-                $("#conditions").show();
-                setTimeout(reset, 5000);
-            }
-            else {
+                else if (status == "conditions") {
+                    $("#default").hide();
+                    $("#conditions").show();
+                    setTimeout(reset, 5000);
+                }
+                else {
+                    setTimeout(update, 100);
+                }
+            } else {
                 setTimeout(update, 100);
             }
-        } else {
+        })
+        .fail(function () {
             setTimeout(update, 100);
-        }
-    });
+        });
 };
 
 update();

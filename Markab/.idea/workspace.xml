@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="content.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/css/content.css">
+      <file leaf-file-name="update.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/update.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="616">
+              <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -44,9 +44,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/update.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/content.css" />
+        <option value="$PROJECT_DIR$/assets/js/update.js" />
       </list>
     </option>
   </component>
@@ -286,12 +286,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461448373418</updated>
-      <workItem from="1461448375267" duration="760000" />
+      <workItem from="1461448375267" duration="941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="760000" />
+    <option name="totallyTimeSpent" value="941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -334,30 +334,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-          <folding>
-            <marker date="1461448864000" expanded="true" signature="420:712" placeholder="{&quot;url&quot;: &quot;https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=398&amp;api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI&quot;...}" />
-            <marker date="1461448864000" expanded="true" signature="606:710" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="717:839" placeholder="//..." />
-            <marker date="1461448864000" expanded="true" signature="865:935" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="1017:2516" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="1152:2512" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="1181:2452" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="1361:1492" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="1533:1662" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="1708:1842" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="1886:2018" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="2058:2186" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="2233:2368" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="2386:2442" placeholder="{...}" />
-            <marker date="1461448864000" expanded="true" signature="2458:2506" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -701,6 +677,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <marker date="1461449307000" expanded="true" signature="95:165" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="172:340" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="423:497" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="505:571" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="580:645" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="649:715" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="791:814" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="826:850" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="925:951" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="960:1063" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="1089:1114" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="1120:1144" placeholder="{...}" />
+            <marker date="1461449307000" expanded="true" signature="1151:1216" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
           <folding />
         </state>
       </provider>
