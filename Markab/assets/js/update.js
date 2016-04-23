@@ -1,90 +1,134 @@
 // print local and mars time
 var currentdate = new Date();
-var datetime = currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds();
-var marsdatetime = (currentdate.getHours() + 5) + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+var datetime = currentdategetHours() + ":" + currentdategetMinutes() + ":" + currentdategetSeconds();
+var marsdatetime = (currentdategetHours() + 5) + ":" + currentdategetMinutes() + ":" + currentdategetSeconds();
 
 $("#local-time").text("Local Time: " + datetime);
 $("#mars-time").text("Mars Time: " + marsdatetime);
 
 
 //print mars image from NASA
-$.ajax({
-    url: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=398&api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI",
+$ajax({
+    url: "https://apinasagov/mars-photos/api/v1/rovers/curiosity/photos?sol=398&api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI",
     dataType: "json",
     success: function (data) {
-        photo = data.photos[2];
-        img = photo.img_src;
+        photo = dataphotos[2];
+        img = photoimg_src;
         $("#map").attr("src", img);
     }
 });
 
 
-// $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function(mars){
-// 	console.log(mars);
+// $get('http://spaceappshackathoneu-gbmybluemixnet/indexphp?q=status', function(mars){
+// 	consolelog(mars);
 // });
 
 var reset = function () {
-    $(".js-panel").hide();
+    $("js-panel").hide();
     $("#default").show();
     update();
-}
+};
 
 // hide all panels by default
-$(".js-panel").hide();
+$("js-panel").hide();
 
 var update = function () {
-    console.log("updating ui...");
-    $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function (response) {
-            if (response.data) {
-                var status = response.data.command;
-                console.log("status: " + status);
+    consolelog("updating ui");
+    $get('http://spaceappshackathoneu-gbmybluemixnet/indexphp?q=status', function (response) {
+        if (responsedata) {
+            var status = responsedatacommand;
 
-                // show containers based on status
-                if (status == "selfie") {
-                    $("#default").hide();
-                    $("#selfie").show();
-                    setTimeout(reset, 5000);
-                }
+            /**
+             *
+             *
+             * selfie
+             * whereismyroverone
+             * whereismyrovertwo
+             * whereami
+             * direction
+             * temperature
+             * time
+             * report
+             * hellomars
+             * message
+             * map
+             * weather
+             */
 
-                else if (status == "time") {
-                    $("#default").hide();
-                    $("#time").show();
-                    setTimeout(reset, 5000);
-                }
+            // show containers based on status
 
-                else if (status == "hellomars") {
-                    $("#default").hide();
-                    $("#hellomars").show();
-                    setTimeout(reset, 5000);
-                }
+            consolelog("status: " + status);
 
-                else if (status == "message") {
-                    $("#default").hide();
-                    $("#message").show();
-                    setTimeout(reset, 5000);
-                }
+            if (status == "selfie") {
+                $("#default").hide();
+                $("#selfie").show();
+                setTimeout(reset, 5000);
+            } else if (status == "whereismyroverone") {
+                $("#default").hide();
+                $("#whereismyroverone").show();
+                setTimeout(reset, 5000);
+            } else if (status == "direction") {
+                $("#default").hide();
+                $("#direction").show();
+                setTimeout(reset, 5000);
+            } else if (status == "whereismyrovertwo") {
+                $("#default").hide();
+                $("#whereismyrovertwo").show();
+                setTimeout(reset, 5000);
+            } else if (status == "whereami") {
+                $("#default").hide();
+                $("#whereami").show();
+                setTimeout(reset, 5000);
+            }
+            else if (status == "temperature") {
+                $("#default").hide();
+                $("#temperature").show();
+                setTimeout(reset, 5000);
+            }
+            else if (status == "time") {
+                $("#default").hide();
+                $("#time").show();
+                setTimeout(reset, 5000);
+            }
 
-                else if (status == "map") {
-                    $("#default").hide();
-                    $("#map").show();
-                    setTimeout(reset, 5000);
-                }
+            else if (status == "report") {
+                $("#default").hide();
+                $("#report").show();
+                setTimeout(reset, 5000);
+            }
 
-                else if (status == "conditions") {
-                    $("#default").hide();
-                    $("#conditions").show();
-                    setTimeout(reset, 5000);
-                }
-                else {
-                    setTimeout(update, 100);
-                }
-            } else {
+            else if (status == "hellomars") {
+                $("#default").hide();
+                $("#hellomars").show();
+                setTimeout(reset, 5000);
+            }
+
+            else if (status == "message") {
+                $("#default").hide();
+                $("#message").show();
+                setTimeout(reset, 5000);
+            }
+
+            else if (status == "map") {
+                $("#default").hide();
+                $("#map").show();
+                setTimeout(reset, 5000);
+            }
+
+            else if (status == "weather") {
+                $("#default").hide();
+                $("#weather").show();
+                setTimeout(reset, 5000);
+            }
+            else {
                 setTimeout(update, 100);
             }
-        })
-        .fail(function () {
+        } else {
             setTimeout(update, 100);
-        });
+        }
+    }).fail(function () {
+        setTimeout(update, 100);
+    });
 };
 
 update();
