@@ -30,9 +30,9 @@ $("#default").show();
 
 var update = function () {
     console.log("updating ui");
-    $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function (response) {
-        if (response.data) {
-            var status = response.data.command;
+    $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function (res) {
+        if (res.data) {
+            var status = res.data.command;
 
             /**
              *
@@ -88,6 +88,7 @@ var update = function () {
             }
 
             else if (status == "report") {
+                $("#report_image").attr("src", res.data.response);
                 $("#default").hide();
                 $("#report").show();
                 setTimeout(reset, 5000);
