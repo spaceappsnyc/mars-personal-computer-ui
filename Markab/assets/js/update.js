@@ -24,6 +24,50 @@ var reset = function () {
     update();
 };
 
+
+var show_hide_panels = function (data) {
+	var status = data.command;
+    if (status == "selfie") {
+        $(".js-panel").hide();
+        $("#selfie").show();
+    } else if (status == "whereismyroverone") {
+        $(".js-panel").hide();
+        $("#whereismyroverone").show();
+    } else if (status == "direction") {
+        $(".js-panel").hide();
+        $("#direction").show();
+    } else if (status == "whereismyrovertwo") {
+        $(".js-panel").hide();
+        $("#whereismyrovertwo").show();
+    } else if (status == "whereami") {
+        $(".js-panel").hide();
+        $("#whereami").show();
+    } else if (status == "temperature") {
+        $(".js-panel").hide();
+        $("#temperature").show();
+    } else if (status == "time") {
+        $(".js-panel").hide();
+        $("#time").show();
+    } else if (status == "report") {
+        $("#report_image").attr("src", data.response);
+        $(".js-panel").hide();
+        $("#report").show();
+    } else if (status == "hellomars") {
+        $(".js-panel").hide();
+        $("#hellomars").show();
+    } else if (status == "message") {
+        $(".js-panel").hide();
+        $("#message").show();
+    } else if (status == "map") {
+        $(".js-panel").hide();
+        $("#map").show();
+    } else if (status == "weather") {
+        $(".js-panel").hide();
+        $("#weather").show();
+    }
+};
+
+
 // hide all panels by default
 $(".js-panel").hide();
 $("#default").show();
@@ -34,8 +78,9 @@ var update = function () {
         if (res.data) {
             var status = res.data.command;
 
+
             /**
-             *
+             * 
              *
              * selfie
              * whereismyroverone
@@ -56,44 +101,7 @@ var update = function () {
             console.log("status: " + status);
 
             var delay = 5000;
-            if (status == "selfie") {
-                $(".js-panel").hide();
-                $("#selfie").show();
-            } else if (status == "whereismyroverone") {
-                $(".js-panel").hide();
-                $("#whereismyroverone").show();
-            } else if (status == "direction") {
-                $(".js-panel").hide();
-                $("#direction").show();
-            } else if (status == "whereismyrovertwo") {
-                $(".js-panel").hide();
-                $("#whereismyrovertwo").show();
-            } else if (status == "whereami") {
-                $(".js-panel").hide();
-                $("#whereami").show();
-            } else if (status == "temperature") {
-                $(".js-panel").hide();
-                $("#temperature").show();
-            } else if (status == "time") {
-                $(".js-panel").hide();
-                $("#time").show();
-            } else if (status == "report") {
-                $("#report_image").attr("src", res.data.response);
-                $(".js-panel").hide();
-                $("#report").show();
-            } else if (status == "hellomars") {
-                $(".js-panel").hide();
-                $("#hellomars").show();
-            } else if (status == "message") {
-                $(".js-panel").hide();
-                $("#message").show();
-            } else if (status == "map") {
-                $(".js-panel").hide();
-                $("#map").show();
-            } else if (status == "weather") {
-                $(".js-panel").hide();
-                $("#weather").show();
-            }
+			show_hide_panels(res.data);
         }
 
         setTimeout(update, 100);
@@ -106,5 +114,17 @@ var update = function () {
 update();
 
 
+
+
+// sidebar interactions
+$( ".nav" ).click(function() {
+	$(".nav").removeClass("selected");
+	$(this).addClass("selected");
+	var status = $(this).attr('name');
+	console.log("sidebar interactions");
+	console.log("status" + status);
+	show_hide_panels({command: status, response:"XXX"});
+
+});
 
 
