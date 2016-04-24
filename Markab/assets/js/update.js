@@ -57,73 +57,47 @@ var update = function () {
 
             var delay = 5000;
             if (status == "selfie") {
-                $("#default").hide();
+                $(".js-panel").hide();
                 $("#selfie").show();
-                setTimeout(reset, delay);
             } else if (status == "whereismyroverone") {
-                $("#default").hide();
+                $(".js-panel").hide();
                 $("#whereismyroverone").show();
-                setTimeout(reset, delay);
             } else if (status == "direction") {
-                $("#default").hide();
+                $(".js-panel").hide();
                 $("#direction").show();
-                setTimeout(reset, delay);
             } else if (status == "whereismyrovertwo") {
-                $("#default").hide();
+                $(".js-panel").hide();
                 $("#whereismyrovertwo").show();
-                setTimeout(reset, delay);
             } else if (status == "whereami") {
-                $("#default").hide();
+                $(".js-panel").hide();
                 $("#whereami").show();
-                setTimeout(reset, delay);
-            }
-            else if (status == "temperature") {
-                $("#default").hide();
+            } else if (status == "temperature") {
+                $(".js-panel").hide();
                 $("#temperature").show();
-                setTimeout(reset, delay);
-            }
-            else if (status == "time") {
-                $("#default").hide();
+            } else if (status == "time") {
+                $(".js-panel").hide();
                 $("#time").show();
-                setTimeout(reset, delay);
-            }
-
-            else if (status == "report") {
+            } else if (status == "report") {
                 $("#report_image").attr("src", res.data.response);
-                $("#default").hide();
+                $(".js-panel").hide();
                 $("#report").show();
-                setTimeout(reset, delay);
-            }
-
-            else if (status == "hellomars") {
-                $("#default").hide();
+            } else if (status == "hellomars") {
+                $(".js-panel").hide();
                 $("#hellomars").show();
-                setTimeout(reset, delay);
-            }
-
-            else if (status == "message") {
-                $("#default").hide();
+            } else if (status == "message") {
+                $(".js-panel").hide();
                 $("#message").show();
-                setTimeout(reset, delay);
-            }
-
-            else if (status == "map") {
-                $("#default").hide();
+            } else if (status == "map") {
+                $(".js-panel").hide();
                 $("#map").show();
-                setTimeout(reset, delay);
-            }
-
-            else if (status == "weather") {
-                $("#default").hide();
+            } else if (status == "weather") {
+                $(".js-panel").hide();
                 $("#weather").show();
-                setTimeout(reset, delay);
             }
-            else {
-                setTimeout(update, 100);
-            }
-        } else {
-            setTimeout(update, 100);
         }
+
+        setTimeout(update, 100);
+
     }).fail(function () {
         setTimeout(update, 100);
     });
