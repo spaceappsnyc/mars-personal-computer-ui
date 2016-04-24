@@ -104,10 +104,10 @@ var update = function () {
 			show_hide_panels(res.data);
         }
 
-        setTimeout(update, 100);
+        setTimeout(update, 1000);
 
     }).fail(function () {
-        setTimeout(update, 100);
+        setTimeout(update, 1000);
     });
 };
 
