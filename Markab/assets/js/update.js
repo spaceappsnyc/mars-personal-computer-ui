@@ -19,8 +19,8 @@ $.ajax({
 // });
 
 var reset = function () {
-    $(".js-panel").hide();
-    $("#default").show();
+    // $(".js-panel").hide();
+    // $("#default").show();
     update();
 };
 
@@ -55,67 +55,68 @@ var update = function () {
 
             console.log("status: " + status);
 
+            var delay = 5000;
             if (status == "selfie") {
                 $("#default").hide();
                 $("#selfie").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             } else if (status == "whereismyroverone") {
                 $("#default").hide();
                 $("#whereismyroverone").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             } else if (status == "direction") {
                 $("#default").hide();
                 $("#direction").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             } else if (status == "whereismyrovertwo") {
                 $("#default").hide();
                 $("#whereismyrovertwo").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             } else if (status == "whereami") {
                 $("#default").hide();
                 $("#whereami").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
             else if (status == "temperature") {
                 $("#default").hide();
                 $("#temperature").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
             else if (status == "time") {
                 $("#default").hide();
                 $("#time").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
 
             else if (status == "report") {
                 $("#report_image").attr("src", res.data.response);
                 $("#default").hide();
                 $("#report").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
 
             else if (status == "hellomars") {
                 $("#default").hide();
                 $("#hellomars").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
 
             else if (status == "message") {
                 $("#default").hide();
                 $("#message").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
 
             else if (status == "map") {
                 $("#default").hide();
                 $("#map").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
 
             else if (status == "weather") {
                 $("#default").hide();
                 $("#weather").show();
-                setTimeout(reset, 5000);
+                setTimeout(reset, delay);
             }
             else {
                 setTimeout(update, 100);
