@@ -74,7 +74,7 @@ $("#default").show();
 
 var update = function () {
     console.log("updating ui");
-    $.get('http://spaceappshackathon.eu-gb.mybluemix.net/index.php?q=status', function (res) {
+    $.get('http://spaceappsapc.mybluemix.net/index.php?q=status', function (res) {
         if (res.data) {
             var status = res.data.command;
 
