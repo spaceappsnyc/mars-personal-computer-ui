@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="update.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/update.js">
+      <file leaf-file-name="nasa-skill-lambda.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nasa-skill-lambda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="1321">
+              <caret line="335" column="1" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,8 @@
         <option value="$PROJECT_DIR$/assets/css/content.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/nasa-skill-lambda.json" />
-        <option value="$PROJECT_DIR$/nasa-skill-lambda.js" />
         <option value="$PROJECT_DIR$/assets/js/update.js" />
+        <option value="$PROJECT_DIR$/nasa-skill-lambda.js" />
       </list>
     </option>
   </component>
@@ -950,12 +950,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461448373418</updated>
-      <workItem from="1461448375267" duration="5486000" />
+      <workItem from="1461448375267" duration="5578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5486000" />
+    <option name="totallyTimeSpent" value="5578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1374,109 +1374,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nasa-skill-lambda.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="335" column="1" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
+        <state relative-caret-position="450">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
           <folding>
-            <marker date="1461458526000" expanded="true" signature="0:556" placeholder="/**Copyright 2014-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved. ...*/" />
-            <marker date="1461458526000" expanded="true" signature="600:628" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="660:709" placeholder="{&quot;PLAIN_TEXT&quot;: 'PlainText'...}" />
-            <marker date="1461458526000" expanded="true" signature="750:1216" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="807:902" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="959:1054" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="1107:1214" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="1219:1273" placeholder="/** Override any of the eventHandlers as needed ...*/" />
-            <marker date="1461458526000" expanded="true" signature="1311:2569" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="1317:1453" placeholder="/** Called when the session starts. ...*/" />
-            <marker date="1461458526000" expanded="true" signature="1518:1525" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="1531:1705" placeholder="/** Called when the user invokes the skill without specifying what they want. ...*/" />
-            <marker date="1461458526000" expanded="true" signature="1764:1829" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="1835:1895" placeholder="/** Called when the user specifies an intent. ...*/" />
-            <marker date="1461458526000" expanded="true" signature="1954:2354" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="2139:2275" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="2281:2348" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="2360:2499" placeholder="/** Called when the user ends the session. ...*/" />
-            <marker date="1461458526000" expanded="true" signature="2560:2567" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="2572:2675" placeholder="/** Subclasses should override the intentHandlers with the functions to handle specific intents. ...*/" />
-            <marker date="1461458526000" expanded="true" signature="2776:3780" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="2786:3685" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="3028:3226" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="3267:3321" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="3354:3444" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="3696:3778" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="3826:3887" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="3932:4246" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="3988:4098" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4005:4091" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4104:4244" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4121:4238" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4282:6515" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4336:5176" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4366:4494" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4526:4658" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4565:4647" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4713:4893" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="4748:4882" placeholder="{&quot;type&quot;: &quot;Simple&quot;...}" />
-            <marker date="1461458526000" expanded="true" signature="4921:4996" placeholder="{&quot;version&quot;: '1.0'...}" />
-            <marker date="1461458526000" expanded="true" signature="5057:5141" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="5190:6512" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="5230:5434" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="5289:5421" placeholder="{&quot;shouldEndSession&quot;: true...}" />
-            <marker date="1461458526000" expanded="true" signature="5506:5790" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="5565:5777" placeholder="{&quot;shouldEndSession&quot;: true...}" />
-            <marker date="1461458526000" expanded="true" signature="5845:6092" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="5904:6079" placeholder="{&quot;shouldEndSession&quot;: false...}" />
-            <marker date="1461458526000" expanded="true" signature="6179:6506" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="6238:6493" placeholder="{&quot;shouldEndSession&quot;: false...}" />
-            <marker date="1461458526000" expanded="true" signature="6522:6553" placeholder="/** App ID for the skill ...*/" />
-            <marker date="1461458526000" expanded="true" signature="6631:6687" placeholder="/** The AlexaSkill prototype and helper functions ...*/" />
-            <marker date="1461458526000" expanded="true" signature="6689:6927" placeholder="/** HelloWorld is a child of AlexaSkill. ...*/" />
-            <marker date="1461458526000" expanded="true" signature="6957:6995" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="7223:7404" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="7497:7777" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="7872:8042" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8046:8080" placeholder="//..." />
-            <marker date="1461458526000" expanded="true" signature="8120:10629" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8208:8345" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8256:8267" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8409:8598" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8468:8590" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8662:8804" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8721:8796" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8859:8977" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="8909:8969" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9033:9159" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9084:9151" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9228:9352" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9281:9344" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9403:9520" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9449:9512" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9573:9692" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9621:9684" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9748:9870" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9799:9862" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9930:10049" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="9979:10041" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10099:10208" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10144:10200" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10262:10384" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10311:10376" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10448:10626" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10734:10863" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10951:11422" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="10973:11073" placeholder="{&quot;host&quot;: 'spaceappshackathon.eu-gb.mybluemix.net'...}" />
-            <marker date="1461458526000" expanded="true" signature="11095:11418" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="11201:11235" placeholder="{...}" />
-            <marker date="1461458526000" expanded="true" signature="11277:11410" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="141:433" placeholder="{&quot;url&quot;: &quot;https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=398&amp;api_key=dazZywWfQsUQLpksbJtmdrnBH7Khif4rWSf6qgJI&quot;...}" />
+            <marker date="1461458731000" expanded="true" signature="327:431" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="438:554" placeholder="//..." />
+            <marker date="1461458731000" expanded="true" signature="580:653" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="757:3815" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="884:3752" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="908:3692" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="966:1311" placeholder="/** ...*/" />
+            <marker date="1461458731000" expanded="true" signature="1474:1606" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="1647:1790" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="1823:1958" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="1999:2142" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="2174:2308" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="2355:2492" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="2532:2662" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="2705:2904" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="2950:3085" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="3129:3262" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="3302:3431" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="3475:3608" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="3626:3682" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="3698:3746" placeholder="{...}" />
+            <marker date="1461458731000" expanded="true" signature="3771:3811" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/update.js">
+    <entry file="file://$PROJECT_DIR$/nasa-skill-lambda.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="1321">
+          <caret line="335" column="1" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
           <folding />
         </state>
       </provider>

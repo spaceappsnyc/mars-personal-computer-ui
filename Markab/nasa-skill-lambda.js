@@ -246,23 +246,23 @@ HelloWorld.prototype.intentHandlers = {
     },
     "WhereIsMyRoverOne": function (intent, session, response) {
         callApi("q=whereismyroverone", function (result) {
-            response.ask("", "Rover one location within 300 meters. Battery status: 37%.  Oxygen supply 71%");
         });
+        response.ask("", "Rover one location within 300 meters. Battery status: 37%.  Oxygen supply 71%");
     },
     "WhereIsMyRoverTwo": function (intent, session, response) {
         callApi("q=whereismyrovertwo", function (result) {
-            response.ask("", "Rover two got stolen last week");
         });
+        response.ask("", "Rover two got stolen last week");
     },
     "WhereAmI": function (intent, session, response) {
         callApi("q=whereami", function (result) {
-            response.ask("", "You are on Mars");
         });
+        response.ask("", "You are on Mars");
     },
     "Direction": function (intent, session, response) {
         callApi("q=direction", function (result) {
-            response.ask("", "Navigating to the hub.");
         });
+        response.ask("", "Navigating to the hub.");
     },
     "MarsSurfaceTemperature": function (intent, session, response) {
         callApi("q=temperature", function (result) {
@@ -286,18 +286,18 @@ HelloWorld.prototype.intentHandlers = {
     },
     "MessageIntent": function (intent, session, response) {
         callApi("q=massage", function (result) {
-            response.ask("", "Checking messages");
         });
+        response.ask("", "Checking messages");
     },
     "Map": function (intent, session, response) {
         callApi("q=map", function (result) {
-            response.ask("", "Showing map");
         });
+        response.ask("", "Showing map");
     },
     "Weather": function (intent, session, response) {
         callApi("q=weather", function (result) {
-            response.ask("", "Loading weather data");
         });
+        response.ask("", "Loading weather data");
     },
     "AMAZON.HelpIntent": function (intent, session, response) {
         response.ask("", "Please contact Mars Help Desk on channel alpha alpha one seven nine. Estimated wait time is 4 hours and 31 minutes. All consultants are busy.");
