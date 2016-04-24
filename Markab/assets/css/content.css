@@ -51,6 +51,11 @@ p {
     line-height: 1.5;
 }
 
+.logo{
+  margin: 10px;
+  width: 80%;
+  max-width: 100%;
+}
 /*---------------------
     CONTENT: SIDE BAR
 ---------------------*/
@@ -101,6 +106,11 @@ p {
     padding: 10px;
     /*background: rgba(68, 255, 184, 0.2);*/
 
+}
+
+.message-container{
+  text-align: left;
+  padding-left: 100px;
 }
 
 
