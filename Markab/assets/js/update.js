@@ -123,7 +123,7 @@ $( ".nav" ).click(function() {
 	var status = $(this).attr('name');
 	console.log("sidebar interactions");
 	console.log("status" + status);
-	show_hide_panels({command: status, response:"XXX"});
+	show_hide_panels({command: status, response:"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00179/opgs/edr/ncam/NLA_413379197EDR_S0060000NCAM00542M_.JPG"});
 
 });
 
