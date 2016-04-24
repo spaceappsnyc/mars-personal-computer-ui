@@ -25,8 +25,8 @@
       <file leaf-file-name="nasa-skill-lambda.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nasa-skill-lambda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="298" column="50" selection-start-line="298" selection-start-column="50" selection-end-line="298" selection-end-column="50" />
+            <state relative-caret-position="946">
+              <caret line="335" column="1" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -950,12 +950,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461448373418</updated>
-      <workItem from="1461448375267" duration="4887000" />
+      <workItem from="1461448375267" duration="5270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4887000" />
+    <option name="totallyTimeSpent" value="5270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1408,8 +1408,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nasa-skill-lambda.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="298" column="50" selection-start-line="298" selection-start-column="50" selection-end-line="298" selection-end-column="50" />
+        <state relative-caret-position="946">
+          <caret line="335" column="1" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
           <folding />
         </state>
       </provider>

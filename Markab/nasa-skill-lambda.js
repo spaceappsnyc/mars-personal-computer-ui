@@ -221,7 +221,7 @@ HelloWorld.prototype.eventHandlers.onSessionStarted = function (sessionStartedRe
 
 HelloWorld.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("HelloWorld onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    var speechOutput = "Welcome to Personal Computer";
+    var speechOutput = "Loading Astronaut's Personal Computer";
     var repromptText = "Waiting for your command";
     response.ask(speechOutput, repromptText);
 };
@@ -265,7 +265,7 @@ HelloWorld.prototype.intentHandlers = {
         });
     },
     "MarsSurfaceTemperature": function (intent, session, response) {
-        callApi("q=marssurfacetemperature", function (result) {
+        callApi("q=temperature", function (result) {
             response.ask("", result.data.response);
         });
     },
