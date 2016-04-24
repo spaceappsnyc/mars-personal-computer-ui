@@ -19,7 +19,7 @@ $.ajax({
 // });
 
 var reset = function () {
-    // $(".js-panel").hide();
+    $(".js-panel").hide();
     // $("#default").show();
     update();
 };
